@@ -1,0 +1,8 @@
+README.md
+setup.py
+cuda/quat_to_mat.cpp
+cuda/quat_to_mat_kernels.cu
+quat_to_mat.egg-info/PKG-INFO
+quat_to_mat.egg-info/SOURCES.txt
+quat_to_mat.egg-info/dependency_links.txt
+quat_to_mat.egg-info/top_level.txt
