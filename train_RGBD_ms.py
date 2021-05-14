@@ -7,16 +7,11 @@
 # Last update on Oct.23, 2018, Jin Zeng
 ##########################################
 
-import sys, os
+import os
 import torch
 import argparse
 import numpy as np
 import torch.nn as nn
-import torch.nn.functional as F
-import torchvision
-import torchvision.models as models
-import sklearn.preprocessing as sk
-from os.path import join as pjoin
 from tensorboardX import SummaryWriter
 
 from torch.autograd import Variable
@@ -25,9 +20,6 @@ from tqdm import tqdm
 
 from models import get_model, get_lossfun
 from loader import get_data_path, get_loader
-from pre_trained import get_premodel
-# from models.loss import cross_cosine, total_loss
-from utils import norm_tf, get_fconv_premodel
 from models.eval import evaluateError, addErrors, averageErrors
 from models.depth_VNL import ModelLoss
 from utils import merge_into_row_with_gt, save_image
